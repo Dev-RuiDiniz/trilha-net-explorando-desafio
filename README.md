@@ -17,5 +17,23 @@ O seu programa deverá cálcular corretamente os valores dos métodos da classe 
 
 ![Diagrama de classe estacionamento](diagrama_classe_hotel.png)
 
+---
+
+## Histórico de Alterações
+
+- **Classes `Pessoa` e `Suite`**: As classes foram mantidas conforme o código inicial.
+- **Classe `Reserva`**: A lógica do desafio foi implementada para:
+    - **Validar a capacidade:** O método `CadastrarHospedes` agora verifica se o número de hóspedes não excede a capacidade da suíte. Se for o caso, uma `InvalidOperationException` é lançada.
+    - **Obter hóspedes:** O método `ObterQuantidadeHospedes` foi implementado para retornar a contagem de hóspedes na lista.
+    - **Calcular valor da diária:** O método `CalcularValorDiaria` agora calcula o valor total (`DiasReservados` x `ValorDiaria`) e aplica um desconto de 10% se o período da reserva for igual ou superior a 10 dias.
+
+- **Classe `Program`**: O código principal foi completado para demonstrar o funcionamento do sistema, incluindo:
+    - Criação de instâncias das classes `Pessoa`, `Suite` e `Reserva`.
+    - Chamadas aos métodos de cálculo.
+    - Impressão dos resultados no console.
+    - Adição de um bloco `try-catch` para demonstrar o tratamento da exceção de capacidade.
+
+---
+
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+O código foi completado e agora o sistema é funcional, obedecendo a todas as regras e validações descritas acima. As implementações foram feitas nas seções comentadas com "TODO".
